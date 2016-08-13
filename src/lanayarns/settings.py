@@ -19,6 +19,17 @@ config.read('./config/settings.ini')
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+# Display settings
+
+OSCAR_SHOP_NAME = "Lana Yarns"
+OSCAR_SHOP_TAGLINE = ""
+
+# Review settings
+OSCAR_ALLOW_ANON_REVIEWS = False
+
+# Currency settings
+
+OSCAR_DEFAULT_CURRENCY = "USD"
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
@@ -41,6 +52,7 @@ EMAIL_HOST_PASSWORD = config.get('email', 'EMAIL_HOST_PASSWORD')
 EMAIL_PORT = config.get('email', 'EMAIL_PORT')
 EMAIL_USE_TLS = config.get('email', 'EMAIL_USE_TLS')
 DEFAULT_FROM_EMAIL = config.get('email', 'DEFAULT_FROM_EMAIL')
+OSCAR_FROM_EMAIL = config.get('email', 'DEFAULT_FROM_EMAIL')
 
 # Application definition
 
