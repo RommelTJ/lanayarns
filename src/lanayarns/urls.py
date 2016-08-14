@@ -16,6 +16,7 @@ from django.conf import settings
 from django.conf.urls import url, include
 from django.conf.urls.static import static
 from django.contrib import admin
+from django.views.generic import TemplateView
 from oscar.app import application
 
 urlpatterns = [
@@ -25,8 +26,9 @@ urlpatterns = [
     # Nonetheless, it's often useful for debugging.
     url(r'^admin/', include(admin.site.urls)),
 
-    # My apps
-    url(r'^comingsoon/', include('comingsoon.urls', namespace="comingsoon")),
+    # My apps - Temporary homepage
+    url(r'^$', include('comingsoon.urls', namespace="comingsoon")),
+    url(r'^thanks/$', TemplateView.as_view(template_name="comingsoon/thanks.html"), name='thanks'),
 
     # Oscar
     url(r'', include(application.urls)),

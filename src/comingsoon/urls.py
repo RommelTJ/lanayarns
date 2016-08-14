@@ -1,5 +1,4 @@
 from django.conf.urls import url
-from django.shortcuts import redirect
 from django.views.generic import TemplateView
 
 from . import views
