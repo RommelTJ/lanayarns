@@ -69,6 +69,8 @@ INSTALLED_APPS = [
     'django.contrib.admin',
     'compressor',
     'widget_tweaks',
+    # My apps
+    'comingsoon',
     ] + get_core_apps()
 
 SITE_ID = 1

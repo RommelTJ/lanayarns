@@ -25,6 +25,10 @@ urlpatterns = [
     # Nonetheless, it's often useful for debugging.
     url(r'^admin/', include(admin.site.urls)),
 
+    # My apps
+    url(r'^comingsoon/', include('comingsoon.urls', namespace="comingsoon")),
+
+    # Oscar
     url(r'', include(application.urls)),
 ]
 
