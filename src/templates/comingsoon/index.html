@@ -6,3 +6,11 @@
 
     <input type="submit" value="Ok" />
 </form>
+
+{% if form.email.errors %}
+    <ol>
+        {% for error in form.email.errors %}
+            <li><strong>{{ error|escape }}</strong></li>
+        {% endfor %}
+    </ol>
+{% endif %}
