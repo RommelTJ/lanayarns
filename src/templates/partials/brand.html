@@ -1,1 +1,16 @@
-<div class="col-sm-7 h1"><a href="{{ homepage_url }}">{% block brand_title %}{{ shop_name }}</a><small> {{ shop_tagline }}</small>{% endblock %}</div>
+{% load staticfiles %}
+<div class="col-sm-4 h1">
+    <div class="row text-center">
+        <div style="display: inline-flex;">
+            <div>
+                <a href="{{ homepage_url }}"><img src="{% static "img/Lana.png" %}" height="150px" /></a>
+            </div>
+            <div class="shop-name">
+                <a class="shop-name-link" href="{{ homepage_url }}">
+                    <span class="shop-name-top">LANA</span><br>
+                    <span class="shop-name-bottom">YARNS</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

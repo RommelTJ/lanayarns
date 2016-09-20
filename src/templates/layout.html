@@ -16,9 +16,12 @@
     <header class="header container-fluid">
         <div class="page_inner">
             <div class="row">
+                <div class="col-sm-4"></div>
                 {% include "partials/brand.html" %}
-                {# Mini-basket wrapped in a block so some templates can now display it #}
-                {% block mini_basket %}{% include "partials/mini_basket.html" %}{% endblock %}
+                <div class="col-sm-4">
+                    {# Mini-basket wrapped in a block so some templates can now display it #}
+                    {% block mini_basket %}{% include "partials/mini_basket.html" %}{% endblock %}
+                </div>
             </div>
         </div>
         {% block navigation %}
