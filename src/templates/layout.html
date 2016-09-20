@@ -3,20 +3,9 @@
 {% load promotion_tags %}
 
 {% block styles %}
-    {% comment %}
-        If you are developing Oscar's CSS, or overriding Oscar's CSS
-        files in your project, then set USE_LESS = True in your
-        settings file. This will enable the on-the-fly less compiler.
-    {% endcomment %}
-{#    {% if use_less %}#}
-{#        <link rel="stylesheet/less" type="text/css" href="{% static "oscar/less/styles.less" %}" />#}
-{#    {% else %}#}
-{#        <link rel="stylesheet" type="text/css" href="{% static "oscar/css/styles_comingsoon.css" %}" />#}
-{#    {% endif %}#}
-    <link rel="stylesheet" type="text/css" href="{% static "oscar/css/styles.css" %}" />
     <link href="{% static "css/styles.css" %}" rel="stylesheet">
-    <link rel="stylesheet" href="{% static "oscar/js/bootstrap-datetimepicker/bootstrap-datetimepicker.css" %}" />
-    <link rel="stylesheet" type="text/css" href="{% static "oscar/css/datetimepicker.css" %}" />
+    <link rel="stylesheet" href="{% static "css/bootstrap-datetimepicker.css" %}" />
+    <link rel="stylesheet" type="text/css" href="{% static "css/datetimepicker.css" %}" />
 {% endblock %}
 
 {% block layout %}

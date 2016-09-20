@@ -27,8 +27,8 @@ urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
 
     # My apps - Temporary homepage
-    url(r'^$', include('comingsoon.urls', namespace="comingsoon")),
-    url(r'^thanks/$', TemplateView.as_view(template_name="comingsoon/thanks.html"), name='thanks'),
+    # url(r'^$', include('comingsoon.urls', namespace="comingsoon")),
+    # url(r'^thanks/$', TemplateView.as_view(template_name="comingsoon/thanks.html"), name='thanks'),
 
     # Oscar
     url(r'', include(application.urls)),
