@@ -6,6 +6,7 @@
 
 {% block product %}
     <article class="product_pod">
+        {{ product.attr.brand }}
         {% block product_image %}
             <div class="image_container">
                 {% with image=product.primary_image %}
@@ -13,6 +14,19 @@
                     <a href="{{ product.get_absolute_url }}"><img src="{{ thumb.url }}" alt="{{ product.get_title }}" class="thumbnail"></a>
                     {% endthumbnail %}
                 {% endwith %}
+            </div>
+        {% endblock %}
+
+        {% block product_title %}
+            <h3><a href="{{ product.get_absolute_url }}" title="{{ product.get_title }}">{{ product.get_title|truncatewords:4 }}</a></h3>
+        {% endblock %}
+
+        {% block product_price %}
+            <div class="product_price">
+                {% include "catalogue/partials/product_price.html" %}
+                {% if not product.is_parent %}
+                    {% include "catalogue/partials/add_to_basket_form_compact.html" %}
+                {% endif %}
             </div>
         {% endblock %}
 
@@ -28,17 +42,11 @@
             {% endiffeature %}
         {% endblock %}
 
-        {% block product_title %}
-            <h3><a href="{{ product.get_absolute_url }}" title="{{ product.get_title }}">{{ product.get_title|truncatewords:4 }}</a></h3>
-        {% endblock %}
-
-        {% block product_price %}
-            <div class="product_price">
+        {% block product_stock %}
+            <div class="product_stock">
                 {% include "catalogue/partials/stock_record.html" %}
-                {% if not product.is_parent %}
-                    {% include "catalogue/partials/add_to_basket_form_compact.html" %}
-                {% endif %}
             </div>
         {% endblock %}
+
     </article>
 {% endblock %}
