@@ -1,12 +1,51 @@
 {% load i18n %}
 <footer class="footer container-fluid">
     {% block footer %}
-        {% comment %}
-            Could be used for displaying links to privacy policy, terms of service, etc.
-            We have a CSS class defined:
-                <ul class="footer_links inline">
-                    ...
+
+        <div class="footer_newsletter">Sign up for our email list</div>
+
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="footer_links_header align-center">Policies</div>
+                <ul class="footer_links inline list-unstyled align-center">
+                    <li><a class="footer_links" href="/terms/" alt="Terms & Conditions">Terms & Conditions</a></li>
+                    <li><a class="footer_links" href="/privacy/" alt="Privacy Policy">Privacy Policy</a></li>
+                    <li><a class="footer_links" href="/shipping/" alt="Shipping & Returns">Shipping & Returns</a></li>
+                    <li><a class="footer_links" href="/faqs/" alt="FAQs">FAQs</a></li>
                 </ul>
-         {% endcomment %}
+            </div>
+            <div class="col-lg-4">
+                <div class="footer_links_header align-center">About</div>
+                <ul class="footer_links inline list-unstyled align-center">
+                    <li><a class="footer_links" href="/history/" alt="History">History</a></li>
+                    <li><a class="footer_links" href="/contact/" alt="Contact Us">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4">
+                <div class="footer_links_header align-center">Follow Us</div>
+                <ul class="inline list-unstyled align-center">
+                    <li>
+                        <a class="footer_links" href="https://www.youtube.com/c/lizajoung" alt="YouTube">
+                            <i class="fa fa-youtube"></i> YouTube</a>
+                    </li>
+                    <li>
+                        <a class="footer_links" href="https://www.ravelry.com/groups/craft-in-a-giffy-podcast" alt="Ravelry">
+                            <i class="fa fa-users"></i> Ravelry</a>
+                    </li>
+                    <li>
+                        <a class="footer_links" href="https://www.instagram.com/lanayarns/" alt="Instagram">
+                            <i class="fa fa-instagram"></i> Instagram</a>
+                    </li>
+                    <li>
+                        <a class="footer_links" href="https://lanayarns.tumblr.com" alt="Tumblr">
+                            <i class="fa fa-tumblr"></i> Tumblr</a>
+                    </li>
+                    <li>
+                        <a class="footer_links" href="https://www.pinterest.com/lanayarns/" alt="Pinterest">
+                            <i class="fa fa-pinterest"></i> Pinterest</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     {% endblock %}
 </footer>
