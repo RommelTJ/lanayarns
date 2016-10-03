@@ -31,6 +31,7 @@ urlpatterns = [
     # url(r'^thanks/$', TemplateView.as_view(template_name="comingsoon/thanks.html"), name='thanks'),
     url(r'^403testing/$', TemplateView.as_view(template_name="403.html"), name='403'), ## Temporary testing.
     url(r'^404testing/$', TemplateView.as_view(template_name="404.html"), name='404'), ## Temporary testing.
+    url(r'^500testing/$', TemplateView.as_view(template_name="500.html"), name='500'), ## Temporary testing.
 
     # Oscar
     url(r'', include(application.urls)),
