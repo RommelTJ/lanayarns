@@ -4572,6 +4572,10 @@ a.list-group-item.active > .badge,
     color: inherit;
     background-color: #eeeeee;
 }
+.jumbotron-lana {
+    margin-top: 50px;
+    background-color: #CBE9F7;
+}
 .jumbotron h1,
 .jumbotron .h1 {
     color: inherit;

@@ -1,17 +1,32 @@
 {% extends "layout.html" %}
 {% load i18n %}
+{% load staticfiles %}
 
 {% block layout %}
 {% include "partials/nav_accounts.html" %}
 
 <div class="container-fluid">
-    <div class="jumbotron">
-        <h1>{% block error_heading %}{% trans 'Sorry!' %}{% endblock %}</h1>
-        {% block error_message %}{% endblock %}
-        <p>
-            <a class="btn btn-primary btn-lg" onclick="javascript:history.go(-1);">{% trans 'Return to previous page' %}</a>
-            <a class="btn btn-primary btn-lg" href="{{ homepage_url }}">{% trans "Go to homepage" %}</a>
-        </p>
+    <div class="jumbotron jumbotron-lana">
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-7">
+                <h1>{% block error_heading %}{% trans 'Sorry!' %}{% endblock %}</h1>
+                {% block error_message %}{% endblock %}
+                <p>
+                    <a class="btn btn-primary btn-lg" onclick="javascript:history.go(-1);">{% trans 'Return to previous page' %}</a>
+                    <a class="btn btn-primary btn-lg" href="{{ homepage_url }}">{% trans "Go to homepage" %}</a>
+                </p>
+            </div>
+
+            <div class="col-lg-3">
+                <div>
+                    <a href="{{ homepage_url }}"><img src="{% static "img/Lana.png" %}" height="150px" /></a>
+                </div>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
     </div>
 </div>
+
+    {% include "partials/footer.html" %}
 {% endblock %}
