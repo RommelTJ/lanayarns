@@ -992,7 +992,7 @@ hr {
 div.shop-name {
     font-size: 2.4em;
     line-height: 0.5em;
-    padding: 0.6em 0 0.6em 0;
+    padding-top: 0.2em;
     margin-left: 0.2em;
 }
 a.shop-name-link {
@@ -4018,7 +4018,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     }
     .navbar-form .form-control {
         display: inline-block;
-        width: auto;
+        width: 20em;
         vertical-align: middle;
     }
     .navbar-form .input-group {
@@ -4113,8 +4113,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     }
 }
 .navbar-default {
-    background-color: #f8f8f8;
-    border-color: #e7e7e7;
+    /*background-color: #CBE9F7;*/
+    /*border-color: #e7e7e7;*/
 }
 .navbar-default .navbar-brand {
     color: #777;
@@ -4128,7 +4128,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     color: #777;
 }
 .navbar-default .navbar-nav > li > a {
-    color: #777;
+    color: black;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
@@ -4209,8 +4209,8 @@ fieldset[disabled] .navbar-default .btn-link:focus {
     color: #ccc;
 }
 .navbar-inverse {
-    background-color: #f8f8f8;
-    border-color: #e3e3e3;
+    background-color: #CBE9F7;
+    border-color: #CBE9F7;
 }
 .navbar-inverse .navbar-brand {
     color: #777777;
@@ -5465,7 +5465,7 @@ button.close {
     text-decoration: inherit;
     -webkit-font-smoothing: antialiased;
     *margin-right: .3em;
-    font-size: 20px;
+    font-size: 15px;
 }
 [class^="icon-"]:before,
 [class*=" icon-"]:before {
@@ -8840,7 +8840,7 @@ form.flat {
         padding-top: 40px;
     }
     .header .page_inner {
-        padding: 50px 0 40px;
+        padding: 20px 0;
     }
 }
 .header h1 {
@@ -9361,7 +9361,7 @@ input[type="number"][id*="quantity"] {
 .navbar-lana > li > a {
     padding-top: 10px;
     padding-bottom: 10px;
-    font-size: 16px;
+    font-size: 13px;
 }
 .well:before,
 .well:after {
