@@ -4209,7 +4209,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
     color: #ccc;
 }
 .navbar-inverse {
-    background-color: #CBE9F7;
+    background-color: #ACDEF4;
     border-color: #CBE9F7;
 }
 .navbar-inverse .navbar-brand {
@@ -8756,7 +8756,7 @@ h5,
     font-weight: normal;
     color: #333333;
     padding: 0 50px 0 50px;
-    background-color: #FFFBF8;
+    background-color: #FFF5ED;
     font-family: "Amatic";
 }
 .align-right,
